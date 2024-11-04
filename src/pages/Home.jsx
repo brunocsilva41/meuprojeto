@@ -11,12 +11,6 @@ export default function Home() {
             Edit <code>../App.js</code> and save to reload.
             Testando
           </p>
-          <a
-            className="App-link"
-            href="/about"
-            target="_blank"
-            rel="noopener noreferrer">
-          </a>
           <a className="App-link" href="/blogs" target="_blank" rel="noopener noreferrer">
             Blogs
           </a>
