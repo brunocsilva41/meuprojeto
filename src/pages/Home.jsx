@@ -6,18 +6,23 @@ export default function Home() {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch('https://gerenciadb.vercel.app/api/users/api/usuarios')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.json();
-            })
-            .then(data => setUsers(data))
-            .catch(error => {
-                console.error('Error fetching users:', error);
-                setError(error);
-            });
+        fetch('https://gerenciadb.vercel.app/api/users/api/usuarios', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => setUsers(data))
+        .catch(error => {
+            console.error('Error fetching users:', error);
+            setError(error);
+        });
     }, []);
 
     return (
