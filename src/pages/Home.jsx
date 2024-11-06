@@ -6,7 +6,7 @@ export default function Home() {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch('https://gerenciadb.vercel.app/api/users/api/usuarios', {
+        fetch('https://gerenciadb.vercel.app/api/usuarios', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
