@@ -41,6 +41,7 @@ export default function Home() {
               <div>Error: {error.message}</div>
           ) : (
               <div className="table-container">
+                  <img src="/penguin.svg" alt="Penguin" className="penguin" />
                   <h2>USUÁRIOS NO BANCO</h2>
                   <input
                       type="text"

@@ -35,3 +35,8 @@ th {
     max-width: 300px;
 }
 
+.penguin {
+    width: 300px;
+    display: block;
+    margin: 0 auto 20px;
+}
